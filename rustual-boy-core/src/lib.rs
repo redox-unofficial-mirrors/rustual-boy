@@ -1,5 +1,7 @@
 extern crate encoding;
 
+#[allow(ellipsis_inclusive_range_patterns)]
+
 #[macro_use]
 mod logging;
 mod mem_map;

@@ -16,7 +16,7 @@ pub fn parse_args() -> CommandLineConfig {
              .index(1)
         ).arg(Arg::with_name("SRAM")
               .help("Path to an SRAM")
-              .short("s")
+              .short('s')
               .long("sram")
         );
 

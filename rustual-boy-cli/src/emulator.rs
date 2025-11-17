@@ -141,8 +141,8 @@ impl Emulator {
             }
 
             if let Some(frame) = video_frame_sink.into_inner().into_inner().into_inner() {
-                let frame: Vec<u32> = frame.into_iter().map(|x| x.into()).collect();
-                self.window.update_with_buffer(&frame);
+                let frame: Vec<u32> = frame.iter().map(|x| x.into()).collect();
+                let _ = self.window.update_with_buffer(&frame);
 
                 if self.mode == Mode::Running {
                     // We only want to update the key state when a frame is actually pushed
