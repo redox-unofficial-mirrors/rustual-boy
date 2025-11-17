@@ -25,5 +25,5 @@ cpal = "0.4.4"
 futures = "0.1.1"
 rustual-boy-middleware = { path = "../rustual-boy-middleware" }
 rustual-boy-core = { path = "../rustual-boy-core" }
-clap = { version = "2.26.0", default-features = false }
+clap = { version = "3.0", default-features = false, features = [ "std", "cargo" ] }
 combine = "2.2.0"
